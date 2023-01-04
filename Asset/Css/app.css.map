@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../Sass/_reset.scss","../Sass/_global.scss","../Sass/_variables.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;EAGI;;;AAGJ;EACI;EACA;EACA;;;AAGJ;AAAA;AAAA;AAAA;EAII;EACA;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI;;;AC7BJ;EACI;EACA,OCFU;;;ADKd;EACI;EACA;EACA","file":"app.css"}
