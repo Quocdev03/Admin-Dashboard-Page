@@ -1,0 +1,120 @@
+.revenue {
+    margin-bottom: 3.5rem;
+
+    &-main {
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-gap: 2rem;
+    }
+
+    &-card {
+        background-color: $white-color;
+        box-shadow: $shadow;
+        border-radius: 10px;
+        padding: 1.4rem 2rem;
+        text-align: center;
+
+
+        &-image {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 180px;
+            margin: 1.5rem auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-info {
+            margin-bottom: 20px;
+        }
+
+        &-name,
+        &-caption {
+            color: $main-text;
+        }
+
+        &-name {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-top: .2rem;
+            margin-bottom: .4rem;
+        }
+
+        &-caption {
+            font-weight: 600;
+            font-size: 1.2rem;
+
+            Small {
+                font-size: 1rem;
+            }
+        }
+
+        &-sum {
+            background-color: $main-accent;
+            border: 1px solid $color-main;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1.35rem;
+        }
+
+        &-price {
+            font-weight: 600;
+            color: $main-text;
+
+        }
+
+        &-quantity {
+            font-weight: 400;
+            color: #555;
+            margin-bottom: .3rem;
+        }
+    }
+
+    &-right {
+        &-content {
+            border-radius: 12px;
+            box-shadow: $shadow;
+            padding: 1rem;
+            background: #fff;
+        }
+    }
+
+    &-graph {
+        &-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            &-icons {
+                display: flex;
+                align-items: center;
+            }
+
+            &-icon {
+                width: 40px;
+                height: 40px;
+                border-radius: 7px;
+                background-color: #eee;
+                display: grid;
+                place-items: center;
+                font-size: 1.2rem;
+                margin-right: .8rem;
+            }
+
+            &-select {
+                select {
+                    background-color: #eee;
+                    border-radius: 10px;
+                    padding: .5rem 1rem;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.analytic {
+     margin-bottom: 3.5rem;
+
+     &-container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 2rem;
+     }
+
+     &-main {
+          box-shadow: $shadow;
+          padding: 1.5rem;
+          border-radius: 10px;
+          display: flex;
+          gap: 0 .8rem;
+          padding-left: 2rem;
+     }
+
+     &-info {
+          &-title {
+               font-weight: 400;
+               color: #555;
+               font-size: .98rem;
+               margin-bottom: .1rem;
+          }
+
+          &-desc {
+               display: block;
+               color: $main-text;
+               font-weight: 600;
+               font-size: 1.3rem;
+
+               small {
+                    font-size: .8rem;
+                    font-weight: 700;
+               }
+          }
+     }
+
+     &-icon {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+     }
+}

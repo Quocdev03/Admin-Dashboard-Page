@@ -1,0 +1,75 @@
+@media only screen and (max-width: 1224px) {
+    .sidebar {
+        left: -360px;
+        z-index: 30;
+    }
+
+    .content {
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    #menu {
+        &-toggle {
+            &:checked~.sidebar {
+                left: 0;
+            }
+
+            &:checked~.overplay {
+                display: block;
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .header {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .analytic {
+        &-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .revenue {
+        &-main {
+            grid-template-columns: 100%;
+        }
+
+        &-card {
+            order: 2;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .analytic {
+        &-container {
+            grid-template-columns: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .header {
+        align-items: center;
+
+        &-left {
+            align-items: center;
+
+            &-title {
+                font-size: 1.2rem;
+            }
+
+            &-desc {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+.sidebar {
+    height: 100%;
+    width: 360px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 1rem 1.2rem;
+    transition: left 300ms;
+
+
+    &-container {
+        height: 100%;
+        width: 100%;
+        background: $white-color;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        padding: 1.2rem;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $main-accent;
+            border-radius: 10px;
+
+            &:hover {
+                background: $color-main;
+
+            }
+        }
+    }
+
+    &-brand {
+        padding-top: 1rem;
+
+
+        &-title {
+            color: #444;
+            font-size: 1.5rem;
+            font-weight: bold;
+
+            span {
+                color: $color-main;
+                font-size: 2.5rem;
+                display: inline-block;
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    &-user {
+        display: grid;
+        grid-template-columns: 70px auto;
+        grid-gap: 0 5px;
+        align-items: center;
+        border: 1px solid $main-accent;
+        padding: .2rem .7rem;
+        margin: 3rem 0rem;
+        border-radius: 7px;
+
+        &-avatar {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 60px;
+            height: 60px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-name {
+            color: $main-text;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        &-id {
+            font-size: .9rem;
+            color: $main-text;
+        }
+    }
+
+    &-menu {
+        &-item {
+            margin-bottom: 1.2rem;
+        }
+
+        &-link {
+            color: $main-text;
+            display: block;
+            padding: .7rem 0rem;
+
+            span {
+                &:first-child {
+                    display: inline-block;
+                    margin-right: .7rem;
+                    font-size: 1.5rem;
+                    color: $color-main;
+                }
+            }
+
+            &.active {
+                background-color: $main-accent;
+                border-radius: 10px;
+                padding: .8rem;
+            }
+        }
+    }
+
+    &-card {
+        background: $main-accent;
+        box-shadow: $shadow;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+
+        &-icon {
+            margin-bottom: .8rem;
+
+            &+div {
+                margin-bottom: 1.2rem;
+            }
+
+            span {
+                font-size: 8rem;
+                color: $color-main;
+                display: inline-block;
+            }
+        }
+
+        &-desc {
+            font-size: .8rem;
+            color: #555;
+        }
+    }
+
+}

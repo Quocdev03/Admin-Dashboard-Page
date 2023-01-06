@@ -1,0 +1,47 @@
+.header {
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      padding-inline: .5rem;
+      margin-bottom: 3rem;
+
+      &-left {
+            display: flex;
+            // align-items: center;
+
+            &-toggle {
+                  label {
+                        display: inline-block;
+                        color: $color-main;
+                        margin-right: 2rem;
+                        font-size: 1.8rem;
+                        cursor: pointer;
+                  }
+            }
+
+            &-title {
+                  color: $main-text;
+                  font-weight: 600;
+                  font-size: 1.8rem;
+            }
+
+            &-desc {
+                  color: #666;
+                  font-size: .9rem;
+
+                  span {
+                        color: red;
+                        font-size: 1.2rem;
+                        display: inline-block;
+                        margin-left: .8rem;
+                  }
+            }
+      }
+
+      &-action {
+            &-button {
+                  padding: .85rem 2rem;
+                  font-size: 1rem;
+            }
+      }
+}

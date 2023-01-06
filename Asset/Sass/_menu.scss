@@ -1,0 +1,14 @@
+#menu {
+     &-toggle {
+          display: none;
+
+          &:checked~.sidebar {
+               left: -360px;
+          }
+
+          &:checked~.content {
+               margin-left: 0;
+               width: 100vw;
+          }
+     }
+}
